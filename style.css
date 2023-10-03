@@ -1,0 +1,228 @@
+/*  ROXO #50619F
+    VERDE #538960
+    BRANCO #F0F0F0
+    PRETO #323232 */
+
+.destaque-titulo{
+    font-weight: 900;
+    color: #538960;
+}
+/*navbar*/
+#a-navbar {
+    background-color: #50619F;
+    position: fixed;
+    padding: 0 !important;
+    top: -60px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 1;
+}
+
+#a-navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.2s;
+    border-bottom: 5px solid #50619F;
+    width: 120px;
+}
+
+#a-navbar a:hover {
+    background-color: #f0f0f0;
+    color: #323232;
+    border-bottom: 5px solid #538960;
+    transition: 0.2s;
+}
+/*Inicio*/
+#inicio{
+    background: linear-gradient(to bottom, rgba(32,32,32,0.8),rgba(32,32,32,0.3)), url('disposicao_dos lixos_fase_1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 10vh;
+    border-bottom: 50px solid #50619F;
+}
+#inicio img{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao a{
+    text-decoration: none;
+    color: #f0f0f0;
+    padding: 10px 50px;
+    display: block;
+    border: 3px solid #f0f0f0;
+    transition: 0.2s;
+}
+.botao a:hover{
+    background-color: rgba(32,32,32,0.8);
+    transition: 0.2s;
+}
+/*introdução*/
+#introducao{
+    padding: 50px 0;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+#introducao h2, #gameplay h2, #infos h2{
+    text-transform: uppercase;
+    color: #323232;
+    font-weight: 400;
+}
+#introducao img{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.coluna-conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*gameplay*/
+#gameplay{
+    border-top: 50px solid #50619F;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+.carousel{
+    margin: 50px 0 0 0;
+}
+/*Infos*/
+#infos{
+    padding: 50px 0;
+    text-align: center;
+    background-color: #50619F;
+    color: #f0f0f0;
+    border-bottom: 20px solid #f0f0f0;
+}
+#infos h2{
+    color: #f0f0f0;
+    margin-bottom: 50px;
+}
+#infos hr{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#infos .requisitos{
+    text-align: justify;
+    padding: 20px;
+}
+#infos .requisitos hr{
+    width: 100%;
+    margin: 5px 0;
+}
+#infos .col-lg-6:first-of-type{
+    border-right: 3px solid #f0f0f0;
+}
+#infos ul li{
+    list-style: none;
+}
+/*Footer*/
+footer{
+    background-color: #50619F;
+    padding: 50px 0;
+    color: #f0f0f0;
+    border-bottom: 30px solid #538960;
+}
+footer h4{
+    font-weight: 800;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+.download-footer a{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    border: 3px solid #f0f0f0;
+    width: 180px;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+.download-footer a:hover{
+    background-color: #f0f0f0;
+    color: #50619F;
+    transition: 0.2s;
+}
+footer a:hover{
+    color: #c2c2c2;
+}
+footer img{
+    width: 35%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+footer i{
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+.social-link{
+    display: flex;
+    align-items: self-start;
+    margin-bottom: 10px;
+}
+/*Responsibilidade*/
+@media (max-width: 991px) {
+    #infos .col-lg-6:first-of-type{
+        border: none;
+        border-bottom: 3px solid #f0f0f0;
+        margin-bottom: 50px;
+    }
+    #introducao{
+        height: 100vh;
+    }
+    #introducao h2, #gameplay h2{
+        text-transform: uppercase;
+        color: #323232;
+        font-weight: 400;
+    }
+    #infos h2{
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    #introducao img{
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .coluna-conteudo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .contatos{
+        display: none;
+    }
+    footer .download-footer{
+        margin-bottom: 50px;
+    }
+    #a-navbar a{
+        width: 110px;
+        font-size: small;
+    }
+  }
